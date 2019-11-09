@@ -14,7 +14,8 @@
     </script>
 
     <!-- fontawesome -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap JQuery & Dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,6 +24,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
+    <style>
+        .navbar-nav>li {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .navbar-nav>li>a {
+            color: #abcbc8;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,103 +53,233 @@
         </li>
     </ul>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav mr-auto mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Our Practice</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
     <main role="main">
 
         <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
+        <div class="jumbotron"
+            style="background-image: url('./assets/images/home.JPG'); background-size: cover; background-repeat: no-repeat; height: 400px;">
+            <!-- style="background-image: url('./assets/images/glasses.JPG');" -->
+            <!-- <img src="./assets/images/glasses.JPG"
+                        style="object-fit: fill; width: 100%; height: 320px; margin: 1% 0;" alt=""> -->
+        </div>
+        <div class="jumbotron mt-n5" style="background-color: #abcbc8;">
             <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout
-                    called a jumbotron and three supporting pieces of content. Use it as a starting point to create
-                    something more unique.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+                <h1>Welcome to Dr. Kenneth Tsim & Associates</h1>
             </div>
         </div>
 
         <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center align-items-center">
+                    <button type="button" class="btn btn-outline-dark rounded btn-lg">Book Appointment</button>
                 </div>
-                <div class="col-md-6">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
-                </div>
-                <!-- <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div> -->
             </div>
-            <div class="row container justify-content-center">
-                    <div class="col-md-6 row align-items-center h-100">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                            magna mollis euismod. Donec sed odio dui. </p>
-                        <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
-                    </div>                    
-                    <!-- <div class="col-md-4">
-                        <h2>Heading</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                            ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                            condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                    </div> -->
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-10 text-center align-items-center">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/IX_D1Cy1I6o" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-            <hr>
+            </div>
+            <!-- Example row of columns -->
+            <div id="text" class="mb-5">
+                <h5>
+                    Dr. Kenneth Tsim & Dr. Kathleen Lum welcome you and thank you for choosing our Optometrist office to
+                    provide the eye care needs for you and your family. We are committed to exceeding your expectations
+                    in vision care dedication to education and innovative technology. Our eye examinations are thorough
+                    and we aim to provide professional and personalized care in a friendly and caring environment.
+                </h5>
+            </div>
+            <br class="clearfix">
 
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-10 text-center align-items-center">
+                    <h3 class="display-4">Optometrists</h3>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 50px;">
+                <div class="col-md-6 align-content-start">
+                    <h3 class="mb-4"><strong>Dr. Kenneth Tsim</strong></h3>
+                    <h5>
+                        It is a long established fact that a reader will be distracted by the readable content of a
+                        page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                        normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look
+                        like
+                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                        as
+                        their
+                        default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                        their
+                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                        purpose
+                        (injected humour and the like).
+                    </h5>
+                </div>
+                <div class="col-md-6 align-content-start">
+                    <h3 class="mb-4"><strong>Dr. Kathleen Lum</strong></h3>
+                    <h5>
+                        It is a long established fact that a reader will be distracted by the readable content of a
+                        page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                        normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look
+                        like
+                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                        as
+                        their
+                        default model text, and a search for 'lorem ipsum' will uncover many web sites still in
+                        their
+                        infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                        purpose
+                        (injected humour and the like).
+                    </h5>
+                </div>
+            </div>
+
+            <br class="clearfix">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center align-items-center">
+                    <img src="./assets/images/contacts.JPG"
+                        style="object-fit: cover; width: 100%; height: 320px; margin: 1% 0;" alt="">
+                </div>
+            </div>
         </div> <!-- /container -->
-
     </main>
 
-    <footer class="container">
-        <p>© Company 2017-2019</p>
+    <br>
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+    <!-- <footer class="container">
+            <p>© Company 2017-2019</p>
+        </footer> -->
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-1 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!"></a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-3">
+                    <!-- <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Contact</a>
+                </h6> -->
+                    <!-- <strong class="text-center">OUR HOURS</strong> -->
+                    <div class="row">
+                        <p>Monday: 10-4 PM</p>
+                        <p>Thursday: 12-7 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Tuesday: 12-7 PM</p>
+                        <p>Friday: 10:30-6 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Wednesday: Closed</p>
+                        <p>Saturday: 10-4 PM</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 align-content-center">
+                    <a href="./index.html"><img src="./assets/images/logo.jpg"
+                            style="object-fit: cover; width: 100%; height: 120px; margin: 1% 0;" alt=""></a>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-3">
+                    <!-- <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Contact</a>
+                </h6> -->
+                    <!-- <strong class="text-center">OUR HOURS</strong> -->
+                    <div class="row">
+                        <p>Monday: 10-4 PM</p>
+                        <p>Thursday: 12-7 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Tuesday: 12-7 PM</p>
+                        <p>Friday: 10:30-6 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Wednesday: Closed</p>
+                        <p>Saturday: 10-4 PM</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-1 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!"> </a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+            <!-- <hr class="rgba-white-light" style="margin: 0 15%;"> -->
+
+            <!-- Grid row-->
+            <!-- <div class="row d-flex text-center justify-content-center mb-md-0 mb-4"> -->
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-8 col-12 mt-5">
+              <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+            </div> -->
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+
+        </div>
+        <!-- Footer Links -->
     </footer>
+    <!-- Footer -->
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
