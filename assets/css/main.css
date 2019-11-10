@@ -18,3 +18,49 @@
   body {
       font-family: 'roboto';
   }
+
+  .fa-google path{
+    fill:url(#grad1);
+  }
+  .fa-google + .fa-google path{
+    fill:url(#grad2);
+  }
+  .icon {
+    display:inline-block;
+    position:relative;
+  }
+  .fa-google + .fa-google {
+     position:absolute;
+     left:0;
+     top:0;
+     clip-path: polygon(0% 0%,120% 0%,0% 75%);
+  }
+
+  /* .fa-instagram path{
+    fill:url(#grad4);
+  }
+  .fa-instagram + .fa-instagram path{
+    fill:url(#grad3);
+  }
+  .icon {
+    display:inline-block;
+    position:relative;
+  }
+  .fa-instagram + .fa-instagram {
+     position:absolute;
+     left:0;
+     top:0;
+     clip-path: polygon(0% 0%,120% 0%,0% 75%);
+  } */
+
+  .conic-gradient {
+    background: conic-gradient(#515bd4, #8134af, #dd2a7b, #feda77, #f58529);
+  }
+
+  .gradient {
+    background-image:
+      radial-gradient(
+        circle at top left,
+        #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80 
+      );
+  }
