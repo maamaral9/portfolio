@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Bootstrap JS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,25 +26,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
+    <style>
+        .navbar-nav>li {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .navbar-nav>li>a {
+            color: #abcbc8;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 
 <body>
     <ul class="nav justify-content-end" style="background-color: #abcbc8;">
         <li class="nav-item">
-            <p class="nav-link active">Call to make an appointment: (905) 796-0888 or Book Online</p>
+            <p class="nav-link">Call to make an appointment: (905) 796-0888 or Book Online</p>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+            <div class="icon" style="border-radius: 10px;">
+                <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x gradient" style="border-radius: 10px; color: white; padding: 2px;"></i></a>
+            </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-google fa-2x"></i></a>
+            <div class="icon mt-2">
+                <i class="fab fa-google fa-2x"></i>
+                <i class="fab fa-google fa-2x"></i>
+            </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+            <a class="nav-link" href="#"><i class="fab fa-facebook fa-2x"></i></a>
         </li>
     </ul>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="#">Jim & Lim</a> -->
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,29 +68,19 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Our Practice</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
         </div>
     </nav>
 
@@ -81,7 +89,7 @@
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron" style="background-color: #abcbc8;">
             <div class="container">
-                <h1 class="display-3">Contact Us</h1>
+                <h1 class="display-4">Contact Us</h1>
             </div>
         </div>
 
@@ -141,16 +149,52 @@
                 </div>
                 <div class="col-md-8">
                     <!-- <h2>Location</h2> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8788020310435!2d-79.7622920494988!3d43.65068986050949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1540d32df0fb%3A0x37e51e41d8d95cd5!2sDr.%20Kenneth%20Tsim%20%26%20Associate!5e0!3m2!1sen!2sca!4v1572827502366!5m2!1sen!2sca" width="700" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8788020310435!2d-79.7622920494988!3d43.65068986050949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1540d32df0fb%3A0x37e51e41d8d95cd5!2sDr.%20Kenneth%20Tsim%20%26%20Associate!5e0!3m2!1sen!2sca!4v1572827502366!5m2!1sen!2sca"
+                        width="700" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
             <br class="clearfix">
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center align-items-center" style="border: 1px solid black;">
+                <div class="col-md-6 text-center align-items-center"
+                    style="border: 1px solid #7caea9; box-shadow: 5px 5px 8px #abcbc8;">
                     <h2>Tell Us About Your Experience!</h2>
+                    <svg style="width:0;height:0;">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="30%" x2="50%" y2="0%">
+                                <stop offset="50%" stop-color="#34a853" />
+                                <stop offset="50%" stop-color="#4285f4" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="30%" x2="50%" y2="0%">
+                                <stop offset="50%" stop-color="#fbbc05" />
+                                <stop offset="50%" stop-color="#ea4335" />
+                            </linearGradient>
+                            <linearGradient id="grad3" x1="0%" y1="30%" x2="50%" y2="0%">
+                                <!-- <stop offset="50%" stop-color="#125688" /> -->
+                                <stop offset="50%" stop-color="#515bd4" />
+                                <stop offset="50%" stop-color="#fb3958" />
+                                <!-- <stop offset="50%" stop-color="#9b6954" /> -->
+                            </linearGradient>
+                            <linearGradient id="grad4" x1="10%" y1="30%" x2="50%" y2="10%">
+                                <stop offset="50%" stop-color="#f58529" />
+                                <stop offset="50%" stop-color="#dd2a7b" />
+                                <!-- <stop offset="50%" stop-color="#ded1c1" /> -->
+                                <!-- <stop offset="50%" stop-color="#6dc993" /> -->
+                            </linearGradient>    
+                        </defs>
+                    </svg>
                     <div class="row justify-content-center">
-                        <a class="nav-link active" href="#"><i class="fa fa-instagram fa-4x"></i></a>
-                        <a class="nav-link active" href="#"><i class="fa fa-google fa-4x"></i></a>
+                        <a class="nav-link active" href="#">
+                            <div class="icon gradient" style="border-radius: 10px; padding-left: 4px; padding-right: 4px;">
+                                <i class="fab fa-instagram fa-4x" style="color: white;"></i>
+                            </div>
+                        </a>
+                        <a class="nav-link active" href="#">
+                            <div class="icon">
+                                <i class="fab fa-google fa-4x"></i>
+                                <i class="fab fa-google fa-4x"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- <div class="col-md-4">
@@ -162,89 +206,117 @@
                     </div> -->
             </div>
         </div> <!-- /container -->
-
     </main>
 
+
+    <!-- Grid row-->
+
+    <br>
+    <hr class="rgba-white-light" style="margin: 0 15%;">
     <!-- <footer class="container">
         <p>© Company 2017-2019</p>
     </footer> -->
     <!-- Footer -->
-<footer class="page-footer font-small indigo">
+    <footer class="page-footer font-small indigo">
 
-    <!-- Footer Links -->
-    <div class="container">
-  
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">About us</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Products</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Awards</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Help</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Contact</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row-->
-      <hr class="rgba-white-light" style="margin: 0 15%;">
-  
-      <!-- Grid row-->
-      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-  
-        <!-- Grid column -->
-        <div class="col-md-8 col-12 mt-5">
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-1 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!"></a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-3">
+                    <!-- <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Contact</a>
+            </h6> -->
+                    <!-- <strong class="text-center">OUR HOURS</strong> -->
+                    <div class="row">
+                        <p>Monday: 10-4 PM</p>
+                        <p>Thursday: 12-7 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Tuesday: 12-7 PM</p>
+                        <p>Friday: 10:30-6 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Wednesday: Closed</p>
+                        <p>Saturday: 10-4 PM</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 align-content-center">
+                    <a href="./index.html"><img src="./assets/images/logo.jpg"
+                            style="object-fit: cover; width: 100%; height: 120px; margin: 1% 0;" alt=""></a>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-3">
+                    <!-- <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Contact</a>
+            </h6> -->
+                    <!-- <strong class="text-center">OUR HOURS</strong> -->
+                    <div class="row">
+                        <p>Monday: 10-4 PM</p>
+                        <p>Thursday: 12-7 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Tuesday: 12-7 PM</p>
+                        <p>Friday: 10:30-6 PM</p>
+                    </div>
+                    <div class="row">
+                        <p>Wednesday: Closed</p>
+                        <p>Saturday: 10-4 PM</p>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-1 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!"> </a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+            <!-- <hr class="rgba-white-light" style="margin: 0 15%;"> -->
+
+            <!-- Grid row-->
+            <!-- <div class="row d-flex text-center justify-content-center mb-md-0 mb-4"> -->
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-8 col-12 mt-5">
           <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
             explicabo.
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+        </div> -->
+            <!-- Grid column -->
+
         </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row-->
-      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-      <!-- Grid row-->
-  
-    </div>
-    <!-- Footer Links -->  
-  </footer>
-  <!-- Footer -->
-  
-  
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
