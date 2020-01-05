@@ -4,67 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Services</title>
+    <title>Contact</title>
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.datetimepicker.css"> -->
     <!-- Bootstrap JS -->
+
+    <!--Bootstrap CSS CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--Moment JS CDN-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+    <!--Tempusdominus JS CDN-->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!--Tempusdominus CSS CDN-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    </script> -->
 
     <!-- fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap JQuery & Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+    </script> -->
+</head>
+
+<style>
+    .navbar-nav>li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar-nav>li>a {
+        color: #abcbc8;
+        font-size: 1.5em;
+    }
+</style>
 </head>
 
 <body>
-    <ul class="nav justify-content-end" style="background-color: #abcbc8;">
-        <li class="nav-item">
-            <p class="nav-link active">Call to make an appointment: (905) 796-0888 or Book Online</p>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="fa fa-instagram fa-2x"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-google fa-2x"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-        </li>
-    </ul>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="#">Jim & Lim</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Our Practice</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
+<ul class="nav justify-content-end" style="background-color: #abcbc8;">
+    <li class="nav-item">
+        <p class="nav-link">Call to make an appointment: (905) 796-0888 or Book Online</p>
+    </li>
+    <li class="nav-item">
+        <div class="icon" style="border-radius: 10px;">
+            <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x gradient"
+                    style="border-radius: 10px; color: white; padding: 2px;"></i></a>
         </div>
-    </nav>
+    </li>
+    <li class="nav-item">
+        <div class="icon mt-2">
+            <i class="fab fa-google fa-2x"></i>
+            <i class="fab fa-google fa-2x"></i>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+    </li>
+</ul>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Our Practice</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
             <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -78,10 +122,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column">
-                        <img src="assets/images/contactlady.jpg" class="float-left" alt="woman putting on contacts" style="width:30%">
-                        <img src="assets/images/eye.jpg" class="float-center" alt="giant eye" style="width:30%">
-                        <img src="assets/images/equipment.jpg" class="float-right" alt="eye exam equipment" style="width:30%">
+                    <div class="col-md-12">
+                        <img src="assets/images/contact1.png" class="float-left" alt="woman putting on contacts" style="width:33%">
+                        <img src="assets/images/eye1.png" class="float-center" alt="giant eye" style="width:33%">
+                        <img src="assets/images/equip.png" class="float-right" alt="eye exam equipment" style="width:33%">
                     </div>
                 </div>
 </body>
