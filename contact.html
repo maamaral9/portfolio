@@ -8,24 +8,48 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.datetimepicker.css"> -->
     <!-- Bootstrap JS -->
+
+    <!--Bootstrap CSS CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--Moment JS CDN-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+    <!--Tempusdominus JS CDN-->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!--Tempusdominus CSS CDN-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    </script> -->
 
     <!-- fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap JQuery & Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+    </script> -->
+
     <style>
         .navbar-nav>li {
             padding-left: 30px;
@@ -46,7 +70,8 @@
         </li>
         <li class="nav-item">
             <div class="icon" style="border-radius: 10px;">
-                <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x gradient" style="border-radius: 10px; color: white; padding: 2px;"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x gradient"
+                        style="border-radius: 10px; color: white; padding: 2px;"></i></a>
             </div>
         </li>
         <li class="nav-item">
@@ -72,12 +97,12 @@
                     <a class="nav-link" href="./index.html">Our Practice</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
             </ul>
@@ -98,11 +123,55 @@
             <h5>Our Eye exam clinic in Brampton is conveniently located near hwy 401 and hwy 407, making our optometrist
                 office easily accessible to patients from Mississauga, Milton, Caledon, Georgetown and surrounding
                 communities.</h5>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5">
                 <div class="col-md-6 text-center align-items-center">
-                    <h2 class="text-center">Book your appointment today</h2>
                     <div class="row justify-content-center">
-                        <p style="width: 650px; height: 400px; background-color: #abcbc8;"></p>
+                        <!-- <p style="width: 650px; height: 400px; background-color: #abcbc8;"></p> -->
+                        <form
+                            style="width: 100%; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 15px; background-color: #abcbc8;">
+                            <h4 class="text-center">Book your appointment today!</h4>
+                            <br />
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input"
+                                                data-target="#datetimepicker1" />
+                                            <div class="input-group-append" data-target="#datetimepicker1"
+                                                data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="formGroupExampleInput">Full Name</label> -->
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="formGroupExampleInput2">Number</label> -->
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Number">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="formGroupExampleInput2">Email</label> -->
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="formGroupExampleInput2">Reason</label> -->
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Reason">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-info">Send</button>
+                            </div>
+                            <br>
+                            <small style="color: white;">Please allow our office 24 hrs to confirm your
+                                appointment</small>
+                        </form>
                     </div>
                     <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
                 </div>
@@ -180,12 +249,13 @@
                                 <stop offset="50%" stop-color="#dd2a7b" />
                                 <!-- <stop offset="50%" stop-color="#ded1c1" /> -->
                                 <!-- <stop offset="50%" stop-color="#6dc993" /> -->
-                            </linearGradient>    
+                            </linearGradient>
                         </defs>
                     </svg>
                     <div class="row justify-content-center">
                         <a class="nav-link active" href="#">
-                            <div class="icon gradient" style="border-radius: 10px; padding-left: 4px; padding-right: 4px;">
+                            <div class="icon gradient"
+                                style="border-radius: 10px; padding-left: 4px; padding-right: 4px;">
                                 <i class="fab fa-instagram fa-4x" style="color: white;"></i>
                             </div>
                         </a>
@@ -314,18 +384,26 @@
         </div>
         <!-- Footer Links -->
     </footer>
-    <!-- Footer -->
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
-    </script>
+        </script>
 
 </body>
 
