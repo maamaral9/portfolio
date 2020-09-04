@@ -1,0 +1,8 @@
+  2020-05-12 2:01:22 PM: Starting composition “name”.
+
+  Output To: C:\git\portfolio\assets\video\intro.mov    2020-05-12 2:02:56 PM: Finished composition “name”.
+
+
+  Total Time Elapsed: 1 Min, 34 Sec
+Log closed on 2020-05-12 at 2:02:56 PM
+

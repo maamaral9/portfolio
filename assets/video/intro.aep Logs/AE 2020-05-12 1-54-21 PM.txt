@@ -1,0 +1,8 @@
+  2020-05-12 1:54:21 PM: Starting composition “Comp 1”.
+
+  Output To: C:\git\portfolio\assets\video\name.mov    2020-05-12 1:54:30 PM: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 9 Seconds
+Log closed on 2020-05-12 at 1:54:30 PM
+
