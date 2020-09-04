@@ -1,84 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Michelle's Portfolio</title>
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- Bootstrap JS -->
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
 
     <!-- fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <!-- Bootstrap JQuery & Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <style>
-        .navbar-nav>li {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        .navbar-nav>li>a {
-            color: #abcbc8;
-            font-size: 1.5em;
-        }
-    </style>
 </head>
-
 <body>
-    <ul class="nav justify-content-end" style="background-color: #abcbc8;">
-        <li class="nav-item">
-            <p class="nav-link active">Call to make an appointment: (905) 796-0888 or Book Online</p>
-        </li>
-        <li class="nav-item">
-            <div class="icon" style="border-radius: 10px;">
-                <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x gradient" style="border-radius: 10px; color: white; padding: 2px;"></i></a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <div class="icon mt-2">
-                <i class="fab fa-google fa-2x"></i>
-                <i class="fab fa-google fa-2x"></i>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-        </li>
-    </ul>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.jpg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" >
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo2.png" class="img-resp"  class="img-resp"
+                alt="Michelle's Logo"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="#navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto mx-auto">
+            <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Our Practice</a>
+                    <a class="nav-link" href="./index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./services.html">Services</a>
+                    <a class="nav-link" href="#recent">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./products.html">Eyeglasses & contacts</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
+                    <a class="nav-link" href="./index.html#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -86,233 +46,161 @@
 
     <main role="main">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron"
-            style="background-image: url('./assets/images/home.JPG'); background-size: cover; background-repeat: no-repeat; height: 400px;">
-            <!-- style="background-image: url('./assets/images/glasses.JPG');" -->
-            <!-- <img src="./assets/images/glasses.JPG"
-                        style="object-fit: fill; width: 100%; height: 320px; margin: 1% 0;" alt=""> -->
-        </div>
-        <div class="jumbotron mt-n5" style="background-color: #abcbc8;">
-            <div class="container" style="color: white;">
-                <h1>Welcome to Dr. Kenneth Tsim & Associates</h1>
+        <!-- Main jumbotron: little blurb about myself -->
+        <div class="container-full-bg" id="container1">
+            <div class="jumbotron" id="jumboMain">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-sm-10 col-md-6 col-xl-6">
+                            <h1 id="intro">------</h1>
+                            <h1 id="greet" class="display-4 mb-4"><strong>HELLO</strong></h1>
+                            
+                        </div>
+                        <div class="vl"></div>
+                        <div class="col-md-4 col-lg-5 col-xl-6 padding-0">
+                            <p class="lead"> I'M MICHELLE.<br>
+                                I ENJOY DESIGNING INTUITIVE <br> APPLICATIONS & WEBSITES.</p>
+                            <!-- <hr class="my-4"> -->
+                            <p class="mini">CURRENTLY LOOKING FOR A FULL-TIME DESIGNER OR FRONT END DEVELOPER ROLE </p>
+                            <p class="resBtn" style="float: left;">
+                                <a class="btn btn-outline-dark rounded btn-md" id="btnresume" target="_blank" href="./resume.html">Resume</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-6 text-center align-items-center">
-                    <button type="button" class="btn btn-outline-dark rounded btn-lg">Book Appointment</button>
+            <div class="row justify-content-start mb-4">
+                <div class="col-md-10 align-items-start">
+                    <h3 class="display-4 mb-5" id="recent">
+                        <strong>Featured Work</strong>
+                    </h3>
                 </div>
             </div>
-
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-10 text-center align-items-center">
-                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/IX_D1Cy1I6o" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+            <div class="row justify-content-center id=caption">
+                <div class="col-md-10 col-lg-6 col-xl-6 padding-0">
+                    <a href="./peakridge.html" style="text-decoration: none;" title="Peak Ridge"><img class="port" src="./assets/images/peak.png" alt="Peak Ridge Website">
+                        <div class="caption">
+                            <strong>WIREFRAME TO PROTOTYPE</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-6 padding-0">
+                    <a href="./delilah.html" style="text-decoration: none;" title="Delilah Fashion"><img class="port" src="./assets/images/del.png" alt="Perpetual Website">
+                        <div class="caption">
+                            <strong>PRODUCT DESIGN</strong>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <!-- Example row of columns -->
-            <div id="text" class="mb-5">
-                <h5>
-                    Dr. Kenneth Tsim & Dr. Kathleen Lum welcome you and thank you for choosing our Optometrist office to
-                    provide the eye care needs for you and your family. We are committed to exceeding your expectations
-                    in vision care dedication to education and innovative technology. Our eye examinations are thorough
-                    and we aim to provide professional and personalized care in a friendly and caring environment.
-                </h5>
-            </div>
-            <br class="clearfix">
-
-            <div class="row justify-content-center mb-3">
-                <div class="col-md-10 text-center align-items-center">
-                    <h3 class="display-4 mb-5">Optometrists</h3>
+            <div class="row justify-content-center" style="margin-top: 10%;">
+                <div class="col-md-10 col-lg-6 col-xl-6 padding-0">
+                    <a href="./blackboard.html" style="text-decoration: none;" title="Blackboard"><img class="port" src="./assets/images/bb1.png" alt="Bodoni Poster">
+                        <div class="caption" >
+                            <strong>FRONT END DEVELOPMENT</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-md-10 col-lg-6 col-xl-6 padding-0">
+                    <a href="./tsim.html" style="text-decoration: none;" title="Tsim Optometry"><img class="port" src="./assets/images/tsim.png"  alt="Logo Design">
+                        <div class="caption" >
+                            <strong>WEB DESIGN & DEVELOPMENT</strong>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 50px;">
-                <div class="col-md-6 align-content-start">
-                    <h3 class="mb-5 mr-1"><strong>Dr. Kenneth Tsim</strong></h3>
-                    <h5 class="mr-2">
-                            Dr. Kenneth Tsim attended the University of Waterloo in
-                            1998 where he completed his Bachelor of Science
-                            degree followed by his Doctor of Optometry degree also
-                            at the University of Waterloo. Since 2005, Dr. Tsim has
-                            worked closely with a group of ophthalmologists in the
-                            GTA where he assisted in the co-management of ocular
-                            conditions including post-surgical treatments. Dr. Tsim is a
-                            member of the Ontario Association of Optometrists and
-                            Canadian Association of Optometrists. He is fluent in
-                            Cantonese. Dr. Tsim stays active in the community by
-                            volunteering his time with the Lions Club, most recently by
-                            vision screening athletes at the Ontario Special Olympics
-                            held in Etobicoke. Dr. Tsim & Dr. Lum met in Optometry
-                            school. They have since gotten married and are happy to
-                            be part of such a growing community and look forward to
-                            serving the city of Brampton and Mississauga.
-                    </h5>
-                </div>
-                <div class="col-md-6 align-content-start">
-                    <h3 class="mb-5 ml-1"><strong>Dr. Kathleen Lum</strong></h3>
-                    <h5 class="ml-2">
-                            Dr. Kathleen Lum was born and raised in Brampton. She
-                            attended the University of Waterloo in 1998 and completed
-                            her Honours Science degree followed by her Doctor of
-                            Optometry degree also at the University of Waterloo. In
-                            2003, she completed her ocular therapeutics internship locally
-                            with several groups of ophthalmologists where she specialized
-                            in the care of patients with ocular disease. Since then, Dr. Lum
-                            has worked closely with a group of ophthalmologists in
-                            Oakville where she assists in the co-management of ocular
-                            conditions. Dr. Lum is a member of the Ontario Association of
-                            Optometrists and Canadian Association of Optometrists. She
-                            also previously volunteered with a vision rehabilitation
-                            specialist at the Canadian National Institute for the Blind. Dr.
-                            Lum has always been fond of the city of Brampton and
-                            Mississauga for its community and diversity and also looks
-                            forward to further serving the communities.
-                    </h5>
-                </div>
-                </div>
-
-                <svg style="width:0;height:0;">
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="30%" x2="50%" y2="0%">
-                            <stop offset="50%" stop-color="#34a853" />
-                            <stop offset="50%" stop-color="#4285f4" />
-                        </linearGradient>
-                        <linearGradient id="grad2" x1="0%" y1="30%" x2="50%" y2="0%">
-                            <stop offset="50%" stop-color="#fbbc05" />
-                            <stop offset="50%" stop-color="#ea4335" />
-                        </linearGradient>
-                        <linearGradient id="grad3" x1="0%" y1="30%" x2="50%" y2="0%">
-                            <!-- <stop offset="50%" stop-color="#125688" /> -->
-                            <stop offset="50%" stop-color="#515bd4" />
-                            <stop offset="50%" stop-color="#fb3958" />
-                            <!-- <stop offset="50%" stop-color="#9b6954" /> -->
-                        </linearGradient>
-                        <linearGradient id="grad4" x1="10%" y1="30%" x2="50%" y2="10%">
-                            <stop offset="50%" stop-color="#f58529" />
-                            <stop offset="50%" stop-color="#dd2a7b" />
-                            <!-- <stop offset="50%" stop-color="#ded1c1" /> -->
-                            <!-- <stop offset="50%" stop-color="#6dc993" /> -->
-                        </linearGradient>
-                    </defs>
-                </svg>
-
-            <br class="clearfix">
-
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center align-items-center">
-                    <img src="./assets/images/contacts.JPG"
-                        style="object-fit: cover; width: 100%; height: 320px; margin: 1% 0;" alt="">
+            <div class="row justify-content-start mb-4">
+                <div class="col-sm-8 col-md-10 col-lg-6 align-items-start">
+                    <h3 class="display-4 mb-5 ml-4" id="about">
+                        <strong>About</strong>
+                    </h3>
                 </div>
             </div>
-        </div> <!-- /container -->
+            <div class="row mb-4">
+                <div class="col-xs-2 col-sm-8 col-md-8 col-lg-6 align-content-start">
+                    <!-- <h3 class="mb-5 mr-1">
+                        <strong>How are you?</strong>
+                    </h3> -->
+                    <h4 class="mr-2 ml-4">
+                        Graduated from the Multimedia Design and Development program at Humber College, Toronto. 
+                        Always finding new ways in challenging my creative side and being open to learning new things.
+                        I enjoy designing clean and simple: logos, apps and websites. 
+                        <br>
+                        <br>
+                        I enjoy making DIY projects for the home and pretty much everything else. 
+                        In my spare time: I love to bake, make party decorations for bachelorette parties and weddings, and I 
+                        also sew articles of clothing for my fiesty pomeranian Pebbles. 
+                    </h4>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <h4 class="mr-2"><strong>Languages</strong></h4>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <h4 class="mr-2"><strong>Design Skills</strong> </h4>
+                                <li>Wireframing</li>
+                                <li>Mockup Designs</li>
+                                <li>Prototyping</li>
+                                <li>Video Editing</li>
+                                <li>Interface Design</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <h4 class="mr-2"><strong>Technical Skills</strong> </h4>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>XD</li>
+                                <li>After Effects</li>
+                                <li>Premiere Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-8">
+                    <div class="col-md-6 col-lg-6 align-items-end">
+                        <img class="pic" src="./assets/images/me2.JPG" alt="Michelle posing">
+                    </div>
+                </div>
+        </div> <!-- /container -->      
     </main>
-
-    <br>
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-    <!-- <footer class="container">
-            <p>© Company 2017-2019</p>
-        </footer> -->
     <!-- Footer -->
-    <footer class="page-footer font-small indigo">
-
+    <footer id="contact">
         <!-- Footer Links -->
-        <div class="container">
-
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-1 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!"></a>
-                    </h6>
+            <div class="container-full-bg" id="container1">
+                <div class="jumbotron" id="jumboFoot">
+                    <h1 class="display-6">Get In Touch!</h1>
+                    <!-- <p class="lead">For more information please feel free to contact me from any of the following listed below.</p> -->
+                    <hr class="my-4">
+                    <a class="email"
+                    href="mailto:michelleamaraldesigns@gmail.com?subject=I%20want%20to%20hire%20Michelle&body=Hi,%20Michelle"
+                    >michelleamaraldesigns@gmail.com</a
+      >
+                    <ul class="nav justify-content-start" id="social"> 
+                        <li class="nav-item">
+                            <div class="icon mt-4">
+                                <a class="nav-link" href="https://www.instagram.com/mamaraldesigns/"><i class="fab fa-instagram fa-2x gradient" id="insta"></i></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="icon mt-4">
+                                <a class="nav-link" href="https://www.linkedin.com/in/michelle-amaral-design"><i class="fab fa-linkedin-in fa-2x gradient" id="linkedin"></i></a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-3">
-                    <!-- <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">Contact</a>
-                </h6> -->
-                    <!-- <strong class="text-center">OUR HOURS</strong> -->
-                    <div class="row">
-                        <p>Monday: 10-4 PM</p>
-                        <p>Thursday: 12-7 PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Tuesday: 12-7 PM</p>
-                        <p>Friday: 10:30-6 PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Wednesday: Closed</p>
-                        <p>Saturday: 10-4 PM</p>
-                    </div>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 align-content-center">
-                    <a href="./index.html"><img src="./assets/images/logo1.JPG"
-                            style="object-fit: cover; width: 70%; height: 130px; margin: 1% 0;" alt=""></a>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-3">
-                    <!-- <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">Contact</a>
-                </h6> -->
-                    <!-- <strong class="text-center">OUR HOURS</strong> -->
-                    <div class="row">
-                        <p>Monday: 10-4 PM</p>
-                        <p>Thursday: 12-7 PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Tuesday: 12-7 PM</p>
-                        <p>Friday: 10:30-6 PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Wednesday: Closed</p>
-                        <p>Saturday: 10-4 PM</p>
-                    </div>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-1 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!"> </a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-
             </div>
-            <!-- Grid row-->
-            <!-- <hr class="rgba-white-light" style="margin: 0 15%;"> -->
-
-            <!-- Grid row-->
-            <!-- <div class="row d-flex text-center justify-content-center mb-md-0 mb-4"> -->
-
-            <!-- Grid column -->
-            <!-- <div class="col-md-8 col-12 mt-5">
-              <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-            </div> -->
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row-->
-        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-        <!-- Grid row-->
-
-        </div>
         <!-- Footer Links -->
     </footer>
+    <p class="copyR">Copyright © 2020 - Michelle Amaral</p>
     <!-- Footer -->
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -322,10 +210,12 @@
     <script>
         window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
-    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
 </body>
-
 </html>
